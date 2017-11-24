@@ -1,0 +1,75 @@
+/* Minimal reset */
+
+html, body {
+    margin: 0;
+}
+
+a {
+    padding: 0;
+    color: inherit;
+}
+
+/* Mobile styles */
+
+:root {
+    font-family: Inconsolata;
+    font-size: 30px;
+}
+
+a, h1 {
+    white-space: nowrap;
+}
+
+h1 {
+    font-family: "Rubik Mono One";
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+.container {
+    min-height: 100%;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Grid layout stuff */
+
+.container {
+    display: grid;
+    grid-template-rows: auto 45px;
+}
+
+.container > * {
+    padding: 10px;
+}
+
+/* Desktop styles */
+
+@media (min-width: 700px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    .container {
+        display: grid;
+        grid-template-rows: auto 40px;
+        grid-template-columns: minmax(100px, 700px);
+    }
+
+    .footer {
+        width: fit-content;
+        justify-self: end;
+    }
+}

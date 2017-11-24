@@ -1,0 +1,19 @@
+{
+  "name": "",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Aurélien Noce <aurelien.noce@imagine-app.fr> (http://imagine-app.fr/)",
+  "license": "@2017 Aurélien Noce & imagine-app",
+  "scripts": {
+    "start": "budo index.js --live --open -- -t babelify"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^14.5.0",
+    "budo": "^10.0.4"
+  }
+}
